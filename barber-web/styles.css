@@ -68,3 +68,24 @@ img {
   transform: scale(1.02);
   transition: 0.2s;
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+header {
+  border-bottom: 2px solid #25d366;
+}
