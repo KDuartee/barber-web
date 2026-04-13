@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collins Barber Shop | Guaymas, Sonora</title>
+    <title>Collins Barber Shop | Barbería en Guaymas, Sonora</title>
+    <meta
+      name="description"
+      content="Collins Barber Shop en Guaymas, Sonora. Cortes de hombre, barba, cejas y más. Reserva tu cita en línea fácil y rápido."
+    />
+    <meta
+      name="keywords"
+      content="barbería Guaymas, barber shop Guaymas, corte de cabello Guaymas, Collins barbería, barbero Sonora"
+    />
+    <meta property="og:title" content="Collins Barber Shop | Guaymas, Sonora" />
+    <meta
+      property="og:description"
+      content="Estilo, precisión y confianza en cada corte. Reserva tu cita en línea."
+    />
+    <meta property="og:type" content="business.local" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1019,6 +1033,90 @@
         display: block;
       }
 
+      /* RESEÑAS */
+      .resenas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .resena-card {
+        background: var(--dark-3);
+        border: 1px solid rgba(201, 168, 76, 0.12);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        transition:
+          border-color var(--transition),
+          transform var(--transition);
+      }
+      .resena-card:hover {
+        border-color: rgba(201, 168, 76, 0.3);
+        transform: translateY(-3px);
+      }
+      .resena-estrellas {
+        color: var(--gold);
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+      }
+      .resena-texto {
+        font-size: 0.97rem;
+        color: rgba(240, 237, 230, 0.8);
+        line-height: 1.7;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .resena-autor {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .resena-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(201, 168, 76, 0.15);
+        border: 1.5px solid rgba(201, 168, 76, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-size: 1rem;
+        color: var(--gold);
+        flex-shrink: 0;
+      }
+      .resena-nombre {
+        font-weight: 600;
+        font-size: 0.92rem;
+        color: var(--text);
+      }
+      .resena-fuente {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+      .resenas-badge {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+      .badge-score {
+        font-family: var(--font-display);
+        font-size: 3.5rem;
+        color: var(--gold);
+        line-height: 1;
+      }
+      .badge-estrellas {
+        color: var(--gold);
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+      }
+      .badge-label {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+
       /* RESPONSIVE */
       @media (max-width: 768px) {
         .nav-links {
@@ -1091,6 +1189,7 @@
         <ul class="nav-links">
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#galeria">Galería</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#reservas" class="nav-cta">Reservar</a></li>
         </ul>
@@ -1101,6 +1200,7 @@
       <div class="mobile-menu" id="mobileMenu">
         <a href="#servicios">Servicios</a>
         <a href="#galeria">Galería</a>
+        <a href="#resenas">Reseñas</a>
         <a href="#ubicacion">Ubicación</a>
         <a href="#reservas" class="nav-cta">Reservar cita</a>
       </div>
@@ -1224,6 +1324,65 @@
               src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80"
               alt="Barbero profesional"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="section" id="resenas">
+      <div class="section-inner">
+        <p class="section-label">Lo que dicen nuestros clientes</p>
+        <h2 class="section-title">Reseñas</h2>
+        <div class="resenas-badge">
+          <div class="badge-score">5.0</div>
+          <div class="badge-info">
+            <div class="badge-estrellas">★★★★★</div>
+            <div class="badge-label">Basado en reseñas de Google</div>
+          </div>
+        </div>
+        <div class="resenas-grid">
+          <div class="resena-card">
+            <div class="resena-estrellas">★★★★★</div>
+            <p class="resena-texto">
+              "Excelente servicio y trabajo muy profesional. Sin duda el mejor
+              lugar para un corte en Guaymas."
+            </p>
+            <div class="resena-autor">
+              <div class="resena-avatar">JM</div>
+              <div>
+                <div class="resena-nombre">José M.</div>
+                <div class="resena-fuente">Google Reviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="resena-card">
+            <div class="resena-estrellas">★★★★★</div>
+            <p class="resena-texto">
+              "Muy buen servicio, los barberos son muy atentos y el resultado
+              quedó justo como lo pedí. 100% recomendado."
+            </p>
+            <div class="resena-autor">
+              <div class="resena-avatar">CA</div>
+              <div>
+                <div class="resena-nombre">Carlos A.</div>
+                <div class="resena-fuente">Google Reviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="resena-card">
+            <div class="resena-estrellas">★★★★★</div>
+            <p class="resena-texto">
+              "Excelente ambiente, muy buen trato y el corte de lujo. Ya es mi
+              barbería de confianza en Guaymas."
+            </p>
+            <div class="resena-autor">
+              <div class="resena-avatar">RL</div>
+              <div>
+                <div class="resena-nombre">Roberto L.</div>
+                <div class="resena-fuente">Google Reviews</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1460,16 +1619,12 @@
           <h2 class="section-title">Horarios</h2>
           <table class="horarios-table">
             <tr>
-              <td>Lunes – Viernes</td>
-              <td class="horario-hora">9:00 – 20:00</td>
+              <td>Lunes – Sábado</td>
+              <td class="horario-hora">9:30 – 19:30</td>
             </tr>
             <tr>
-              <td>Sábado</td>
-              <td class="horario-hora">9:00 – 18:00</td>
-            </tr>
-            <tr class="cerrado">
               <td>Domingo</td>
-              <td class="horario-hora">Cerrado</td>
+              <td class="horario-hora">13:00 – 15:30</td>
             </tr>
           </table>
           <p class="horarios-nota">¿Dudas? Escríbenos al WhatsApp.</p>
@@ -1650,7 +1805,6 @@
       ];
       const DIAS = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
       const HORAS_SEMANA = [
-        "9:00",
         "9:30",
         "10:00",
         "10:30",
@@ -1659,6 +1813,7 @@
         "12:00",
         "12:30",
         "13:00",
+        "13:30",
         "14:00",
         "14:30",
         "15:00",
@@ -1673,7 +1828,6 @@
         "19:30",
       ];
       const HORAS_SAB = [
-        "9:00",
         "9:30",
         "10:00",
         "10:30",
@@ -1682,6 +1836,7 @@
         "12:00",
         "12:30",
         "13:00",
+        "13:30",
         "14:00",
         "14:30",
         "15:00",
@@ -1690,7 +1845,12 @@
         "16:30",
         "17:00",
         "17:30",
+        "18:00",
+        "18:30",
+        "19:00",
+        "19:30",
       ];
+      const HORAS_DOM = ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30"];
 
       const today = new Date();
       calYear = today.getFullYear();
@@ -1723,8 +1883,7 @@
           const isPast =
             date <
             new Date(today.getFullYear(), today.getMonth(), today.getDate());
-          const isSun = dow === 0;
-          if (isPast || isSun) {
+          if (isPast) {
             el.classList.add("disabled");
           } else {
             if (date.toDateString() === today.toDateString())
@@ -1750,7 +1909,8 @@
       function renderHoras(dow) {
         const grid = document.getElementById("horas-grid");
         grid.innerHTML = "";
-        const horas = dow === 6 ? HORAS_SAB : HORAS_SEMANA;
+        const horas =
+          dow === 6 ? HORAS_SAB : dow === 0 ? HORAS_DOM : HORAS_SEMANA;
         horas.forEach((h) => {
           const btn = document.createElement("button");
           btn.className = "hora-btn";
@@ -1797,8 +1957,8 @@
       }
 
       function confirmarCita() {
-        const nota = state.nota ? "\n 📝 Nota: " + state.nota : "";
-        const msg = `Hola Collins! Quiero reservar una cita 💈\n\n ✂️ Servicio: ${state.servicio}\n 📅 Fecha: ${state.fecha}\n 🕐 Hora: ${state.hora}\n 👤 Nombre: ${state.nombre}${nota}\n\n¿Está disponible ese horario?`;
+        const nota = state.nota ? "\nNota: " + state.nota : "";
+        const msg = `Hola Collins! Quiero reservar una cita.\n\nServicio: ${state.servicio}\nFecha: ${state.fecha}\nHora: ${state.hora}\nNombre: ${state.nombre}${nota}\n\n¿Está disponible ese horario?`;
         const url =
           "https://wa.me/526622978045?text=" + encodeURIComponent(msg);
         window.open(url, "_blank");
