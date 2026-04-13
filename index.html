@@ -2,65 +2,292 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Barbería Elite</title>
-    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collins Barber Shop | Guaymas, Sonora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <a href="https://wa.me/526622978045" class="whatsapp-float" target="_blank">
-    💬
-  </a>
   <body>
-    <header>
-      <h1>Barbería Elite</h1>
-      <p>Estilo, precisión y confianza en cada corte</p>
-    </header>
-    <div class="container">
-      <img
-        src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70"
-        alt="Barbería"
-        style="width: 100%; border-radius: 10px"
-      />
-    </div>
-
-    <div class="container">
-      <h2>Servicios</h2>
-
-      <div class="servicios">
-        <h3>Cortes</h3>
-        <div class="servicio">Corte de hombre - $200</div>
-        <div class="servicio">Corte de niño - $170</div>
-        <div class="servicio">Corte con barba - $300</div>
-        <div class="servicio">Cejas - $50</div>
-        <div class="servicio">Barba - $150</div>
-
-        <h3>Cejas</h3>
-        <div class="servicio">Diseño de cejas - $50</div>
-
-        <h3>Cuidado facial</h3>
-        <div class="servicio">Limpieza facial - $300</div>
-
-        <h3>Relajación</h3>
-        <div class="servicio">Masaje relajante - $300</div>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <span class="logo">Collins<span class="logo-accent">.</span></span>
+        <ul class="nav-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li>
+            <a href="https://wa.me/526622978045" target="_blank" class="nav-cta"
+              >Agendar</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="https://wa.me/526622978045" target="_blank" class="nav-cta"
+          >Agendar cita</a
+        >
+      </div>
+    </nav>
 
-      <a class="btn" href="https://wa.me/+526622978045" target="_blank">
-        Agenda tu cita por WhatsApp</a
-      >
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Barbería en Guaymas, Sonora</p>
+        <h1 class="hero-title">
+          Collins<br /><span class="hero-title-accent">Barber Shop</span>
+        </h1>
+        <p class="hero-sub">Estilo, precisión y confianza en cada corte.</p>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/526622978045"
+            target="_blank"
+            class="btn-primary"
+            >Agendar cita</a
+          >
+          <a href="#servicios" class="btn-ghost">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-scroll">↓</div>
+    </section>
+
+    <!-- STRIP DE CONFIANZA -->
+    <div class="trust-strip">
+      <div class="trust-item">
+        <span class="trust-icon">✂</span><span>Barberos profesionales</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">★</span><span>Servicio premium</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">📍</span><span>Guaymas, Sonora</span>
+      </div>
     </div>
 
-    <h2>Ubicación</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.2668427352683!2d-110.9184023!3d27.9244637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c97b41cd59f821%3A0x3a247a92fd1a0309!2sCollins%20Barber%20Shop!5e0!3m2!1ses-419!2smx!4v1775704454400!5m2!1ses-419!2smx"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="section-inner">
+        <p class="section-label">Lo que ofrecemos</p>
+        <h2 class="section-title">Servicios</h2>
 
+        <div class="servicios-grid">
+          <div class="categoria-card">
+            <div class="categoria-header">
+              <span class="categoria-icon">✂</span>
+              <h3>Cortes</h3>
+            </div>
+            <ul class="servicio-list">
+              <li>
+                <span>Corte de hombre</span><span class="precio">$200</span>
+              </li>
+              <li>
+                <span>Corte de niño</span><span class="precio">$170</span>
+              </li>
+              <li>
+                <span>Corte con barba</span><span class="precio">$300</span>
+              </li>
+              <li><span>Barba</span><span class="precio">$150</span></li>
+            </ul>
+          </div>
+
+          <div class="categoria-card">
+            <div class="categoria-header">
+              <span class="categoria-icon">◈</span>
+              <h3>Estética facial</h3>
+            </div>
+            <ul class="servicio-list">
+              <li>
+                <span>Diseño de cejas</span><span class="precio">$50</span>
+              </li>
+              <li>
+                <span>Limpieza facial</span><span class="precio">$300</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="categoria-card">
+            <div class="categoria-header">
+              <span class="categoria-icon">♦</span>
+              <h3>Relajación</h3>
+            </div>
+            <ul class="servicio-list">
+              <li>
+                <span>Masaje relajante</span><span class="precio">$300</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-center">
+          <a
+            href="https://wa.me/526622978045"
+            target="_blank"
+            class="btn-primary"
+            >Agenda tu cita por WhatsApp</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section section-dark" id="galeria">
+      <div class="section-inner">
+        <p class="section-label">Nuestro trabajo</p>
+        <h2 class="section-title">Galería</h2>
+        <div class="galeria-grid">
+          <div class="galeria-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80"
+              alt="Corte de cabello"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80"
+              alt="Barbería interior"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80"
+              alt="Corte moderno"
+            />
+          </div>
+          <div class="galeria-item wide">
+            <img
+              src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80"
+              alt="Barbero profesional"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="section" id="horarios">
+      <div class="section-inner horarios-wrap">
+        <div class="horarios-text">
+          <p class="section-label">Visítanos</p>
+          <h2 class="section-title">Horarios</h2>
+          <table class="horarios-table">
+            <tr>
+              <td>Lunes – Viernes</td>
+              <td class="horario-hora">9:00 – 20:00</td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td class="horario-hora">9:00 – 18:00</td>
+            </tr>
+            <tr class="cerrado">
+              <td>Domingo</td>
+              <td class="horario-hora">Cerrado</td>
+            </tr>
+          </table>
+          <p class="horarios-nota">¿Dudas? Escríbenos al WhatsApp.</p>
+        </div>
+        <div class="horarios-cta-box">
+          <p>¿Listo para tu <br /><strong>próximo corte?</strong></p>
+          <a
+            href="https://wa.me/526622978045"
+            target="_blank"
+            class="btn-primary"
+            >Escribir por WhatsApp</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section class="section section-dark" id="ubicacion">
+      <div class="section-inner">
+        <p class="section-label">Encuéntranos</p>
+        <h2 class="section-title">Ubicación</h2>
+        <div class="mapa-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.2668427352683!2d-110.9184023!3d27.9244637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c97b41cd59f821%3A0x3a247a92fd1a0309!2sCollins%20Barber%20Shop!5e0!3m2!1ses-419!2smx!4v1775704454400!5m2!1ses-419!2smx"
+            width="100%"
+            height="420"
+            style="border: 0; border-radius: 12px; display: block"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p class="ubicacion-address">📍 Guaymas, Sonora, México</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <p>Guaymas, Sonora</p>
+      <div class="footer-inner">
+        <span class="logo">Collins<span class="logo-accent">.</span></span>
+        <p class="footer-tagline">
+          Estilo, precisión y confianza en cada corte.
+        </p>
+        <div class="footer-links">
+          <a href="https://wa.me/526622978045" target="_blank">WhatsApp</a>
+        </div>
+        <p class="footer-copy">© 2025 Collins Barber Shop · Guaymas, Sonora</p>
+      </div>
     </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a
+      href="https://wa.me/526622978045"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="white"
+        width="26"
+        height="26"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+        />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L.057 23.5a.5.5 0 0 0 .6.6l5.763-1.503A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.51-5.17-1.4l-.37-.22-3.83.999 1.02-3.72-.24-.38A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        hamburger.classList.toggle("active");
+      });
+      mobileMenu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+          hamburger.classList.remove("active");
+        });
+      });
+
+      // Scroll nav
+      const nav = document.querySelector("nav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 60);
+      });
+    </script>
   </body>
 </html>
